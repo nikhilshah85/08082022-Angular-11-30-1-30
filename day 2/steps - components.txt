@@ -127,6 +127,107 @@ build the application and un the application
 13. Save all the files, build the app and check the output 
 
 
+14. In the products component, add a new array of string : Productcategory:string = [...........]
+	dispplay all the values in a drop down in html
+
+
+
+15. add a new component stocks
+	in the stocks.component.ts, add a new JSON object for stock
+
+	stockInfo= {
+      stockId:101,
+      stockName:'Reliance',
+      stockCategory:'Petro Chemicals',
+      stockPurchasePrice:1200,
+      stockCurrentPrice:2600,
+      stockQty:50,
+      stockPromoters:['Mukesh','Nita','Anil','Ananth']
+
+    }
+
+16. Display the values in stock.components.html
+
+	
+
+<div>
+    <h2> Stock Id : {{ stockInfo.stockId }} </h2>
+    <h2> Stock Name : {{ stockInfo.stockName }} </h2>
+    <h2> Stock Category : {{ stockInfo.stockCategory }} </h2>
+    <h2> Stock Purchase : {{ stockInfo.stockPurchasePrice }} </h2>
+    <h2> Stock Current : {{ stockInfo.stockCurrentPrice }} </h2>
+    <h2> Stock Qty : {{ stockInfo.stockQty }} </h2>
+
+    <h2> Investment Value :  {{ stockInfo.stockPurchasePrice * stockInfo.stockQty }} </h2>
+    <h2> Current Value :  {{ stockInfo.stockCurrentPrice * stockInfo.stockQty }}</h2>
+    
+
+    <h2> Stock Promoters :  </h2>
+    <ol>
+        <li *ngFor="let p of stockInfo.stockPromoters">
+            {{ p }}
+        </li>
+    </ol>
+</div>
+
+
+17. use the <app-stocks> selector in app.component.html (remove old code from this file if needed)
+
+	build the app, test the app
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
