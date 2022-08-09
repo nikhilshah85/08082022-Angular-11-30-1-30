@@ -1,0 +1,148 @@
+
+1. Be an Angular Developer
+	Typescript
+	Components
+	Directives
+	Pipes
+	Services
+		APi Calls 
+		Guards (security)
+	SPA - Routeing 
+---------------------------------------
+Pre-req
+a. OOPS and html, css Fundamentals
+b. Software setup
+	Node with NPM 
+	VS Code
+	Angular to be installed 
+	
+	you can make use of cloud lab 
+==================================
+	Be a confident Angular Developer after training
+
+----------------------------------------------
+	Be Interactive
+
+	Last 20 mins if QnA - open 
+
+
+
+
+
+						Web Revolution (2007)
+
+
+		1. Which year did u first used internet ? - World average is 2007
+		2. What did u use internet for in those days - Surfing 
+		3. Where did u use internet ? Home / Cyber 
+		4. Which was the devise ? Desktop / laptop
+		5. Source of internet  - Broadband / telephone - fast, stable and static
+
+------------------------------------------------------------------------------------------------
+			Today (present)
+		1. When new ppl will start to use internet
+		2. What did u use internet for in those days - Games, Socials, ordering ( useage is increased by 500%)
+		3. Where did u use internet ? Everywhere
+		4.  Which was the device ? Desktop, Laptop, Phones, tablets, big screens etc....
+			user Habbits - turn the phone, zoom in zoom out, use a camerra, use Navigator
+		5. Source of internet - Mobile network - 2G/3G/4G
+
+		Developer is suppose to create the contents accordingly
+			We had server side tech - ASP.Net, Java, JSP, PHP, Python etc......	
+				This are all server side tech
+
+		We need client centeric APPS - web contents
+
+		Google, Facebook, MS came ahead and create client centric framework  (SPA - single paged application)
+
+
+
+		-----------------------------------------------
+
+		To meet all of the above changes W3C and ECMA 
+			W3C - World wide web consorium 
+			ECMA - European Computer Manufacturing Association 
+
+			HTML ---> HTML5
+			CSS  ---> CSS3
+			JS   ---> ES6  
+
+	JS was not OOPS based - EcmaScript is OOPS based - which gets converted to JS as per browser standards
+
+
+		But, ES was very difficult to write (very difficult)
+			Thus MS made it easy by applying a wrapper on it - Typescript    - Microsoft
+								Google used Typescript   - Angular
+								Facebook used Typescript - React
+								Twitter used Typescript  - Bootstrap
+								IBM / HP / Sun           - Knockout / backbone etc...
+		
+		
+
+
+----------------------------------------------------
+					AngularJS vs Angular
+
+
+
+
+
+
+	In early days - it use be AngularJS - this is light weight JS library based on MVC pattern 
+			suitable for client side filter, sort, data manipulation, SPA apps 
+			good for small app only
+	
+			Heavy apps fails here
+			To be used with server side page
+
+		last version was 1.7
+
+
+	After that Anguar 2.0 was released
+		based on Typescript, OOPS and Component based development against MVC
+		Stand alone development
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

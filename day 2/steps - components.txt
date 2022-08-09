@@ -1,0 +1,28 @@
+1. Create a a new angular app
+	ng new angularcomponents
+2. open the app in VS Code, go to src, app, remove everything from app.component.html
+3. go to app.component.ts
+  appName = "Angular Components training";
+  trainer = "Nikhil Shah";
+  attendees = 38;
+
+  greetings()
+  {
+    alert('Hello and Welcome to Angular Development Training');
+  }
+
+4. in app.component.css
+	h1{
+    text-align: center;
+    color:blueviolet;
+}
+
+5. in app.component.html
+	
+	<h1> {{ appName }}</h1>
+	<h4> Trainer : {{ trainer }}</h4>
+	<h4> Total Attendees : {{ attendees }}</h4>
+
+	<button (click)="greetings()" > Click me</button>
+
+build the application and un the application 
