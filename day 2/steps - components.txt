@@ -87,6 +87,64 @@ build the application and un the application
 		3. JSON Object Array
 
 
+11. Comment all the properties from employee.compinent.ts
+	add below strongly typed properties
+
+	empNo:number = 101;
+  	empName:string = "Nikhil";
+	empDesignation:string = "Consultant";
+	empSalary:number  = 2000;
+	empIsPermenant:boolean = true;
+
+	empSkills:string[] = ['Angular','.Net','Azure','SQL Server','MSBI','Databricks','Azure Synapse','React'];
+
+12. In employee.component.html
+	
+
+<div>
+    <h3> Employee Number : {{ empNo }}</h3>
+    <h3> Employee Name : {{empName }}</h3>
+    <h3> Employee Designation : {{empDesignation }} </h3>
+    <h3> Employee Salary : {{empSalary}} </h3>
+    <h3> Employee Is Permenant  : {{ empIsPermenant}} </h3>
+
+   <!-- Angular Directive -->
+  <!-- <ul>
+    <li *ngFor="let s of empSkills"> {{ s }} </li>
+    </ul> -->
+<!-- 
+    <select>
+        <option *ngFor="let sk of empSkills">{{ sk }}</option>
+    </select> -->
+
+    <span *ngFor="let e of empSkills">
+        <input type="checkbox"> {{ e }}
+    </span>
+
+
+</div>
+
+13. Save all the files, build the app and check the output 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
