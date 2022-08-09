@@ -26,3 +26,116 @@
 	<button (click)="greetings()" > Click me</button>
 
 build the application and un the application 
+
+----------------------------------------------------------------------------------------------------------------
+
+6. Create your own component
+	stop the application - Control + C 
+	Navigate to app folder using terminal - command prompr - cd .\src\app\
+	
+	ng g c products
+
+	check the app folder, u will get a new folder created - Products
+	folder will have 4 tiles
+		products.component.html
+		products.component.css
+		products.component.ts
+		products.component.spec.ts (this is for testing, we are not using this)
+
+7. in products.component.ts file add some properties 
+		 componentName ="Products";
+  		 totalProducts = 20;
+		 todaysDate = new Date();
+
+8. in products.component.ts 
+
+
+<h1> {{componentName}}</h1>
+
+  <p> Total Products : {{  totalProducts }} </p>
+
+  <p> {{ todaysDate }} </p>
+
+9. in products.component.css
+	h1{
+    color: brown;
+}
+
+10. In app.component.html
+  <app-products></app-products> (this is the selector from .ts file)
+
+----------------------------------------------------------------------------------
+
+	Create 1 more component - Employee
+	add below properties
+		empNo=101;
+		empName = "Your Name"
+		empDesigantion = "Your designation"
+		empDept = "IT"
+		
+	call the values on employee.component.html using {{ }}
+	
+		inject the component in app.component.html
+		<app-employee></app-employee>
+
+-------------------------------------------------------
+	Next step - Data Categories with component
+
+		1. Primitive Data types
+		2. Array of primitive data types
+		3. JSON Object
+		3. JSON Object Array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
