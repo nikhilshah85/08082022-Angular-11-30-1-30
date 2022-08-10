@@ -1,0 +1,86 @@
+1. createa a new Angular Application - shoppingAPP
+2. create a new component  - products in the app folder
+3. create a new JSON object array in products.component.ts
+	
+  productList = [
+    {pId:101, pName:'Pepsi',pCategory:'Cold-Drink',pPrice:50,pAvailableQty:50, pDiscount:10,pIsInstock:true},
+    {pId:102, pName:'Coke',pCategory:'Cold-Drink',pPrice:45,pAvailableQty:50, pDiscount:15,pIsInstock:true},
+    {pId:103, pName:'Maggie',pCategory:'Fast-Food',pPrice:150,pAvailableQty:50, pDiscount:18,pIsInstock:false},
+    {pId:104, pName:'Fossil',pCategory:'Electronic',pPrice:18000,pAvailableQty:50, pDiscount:2,pIsInstock:true},
+    {pId:105, pName:'Axe',pCategory:'Accessory',pPrice:250,pAvailableQty:50, pDiscount:15,pIsInstock:true},
+    {pId:106, pName:'Pears',pCategory:'Accessory',pPrice:125,pAvailableQty:50, pDiscount:10,pIsInstock:true},
+    {pId:107, pName:'Close-Up',pCategory:'Accessory',pPrice:95,pAvailableQty:50, pDiscount:8,pIsInstock:false},
+    {pId:108, pName:'Tetley',pCategory:'Hot-Drink',pPrice:580,pAvailableQty:50, pDiscount:12,pIsInstock:true},
+    {pId:109, pName:'Mocha',pCategory:'Hot-Drink',pPrice:240,pAvailableQty:50, pDiscount:0,pIsInstock:true},
+  ]
+
+
+4. in the products.component.html - display the data in table
+
+	
+<table class="table table-bordered">
+    <tr>
+        <th> Id  </th>
+        <th> Product  </th>
+        <th> Catergory  </th>
+        <th> Price  </th>
+        <th> Qty  </th>
+        <th> Discount  </th>
+        <th> Is Available  </th>
+        <th> Offer Price  </th>
+    </tr>
+
+    <tr *ngFor="let p of productList">
+        <td> {{ p.pId }} </td>
+        <td> {{ p.pName }} </td>
+        <td> {{ p.pCategory }} </td>
+        <td> {{ p.pPrice }} </td>
+        <td> {{ p.pAvailableQty }} </td>
+        <td> {{ p.pDiscount }} %</td>
+        <td> {{ p.pIsInstock }} </td>
+        <td> {{ p.pPrice -  (p.pPrice * p.pDiscount) / 100}} </td>           
+        
+        <td> <button class="btn btn-primary"> Add To Cart</button> </td>
+    </tr>
+</table>
+
+
+
+
+5. call the products component in app.component.html
+	<app-prooducts></app-products>
+
+6. lets use some good UI 
+	index.html, use <body style="background-color:aqua;color:brown">
+
+7. lets use bootstrap 
+	https://getbootstrap.com/docs/3.4/getting-started/#download
+
+	include the CDN in ur page
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
