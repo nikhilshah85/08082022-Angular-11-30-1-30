@@ -1,0 +1,34 @@
+
+
+
+
+
+			Requirement : Create a stock Component - to have list of stocks in Portfolio
+			use will have list of stocks purchased
+
+		1. Create a new application - without routing - pipedemo2
+		2. remove all the contents from App.js
+		3. create a new component - stockportfolio
+		4. in the stockportfolio.component.ts file
+			add a json object array
+			[
+				stockId:101, stockName:Reliance, stockCategory:'Petro',stockPurchase:1600,stockCurrent:2400,qty}
+
+			]
+			add minimum 10 stocks with variaations in purchse, current and qty
+
+		5. Display the data on HTML in a table
+		6. On top of the table, display total investment(sum of purchase * qty ) of all stock (left)
+		7. Next to it - Investment status - ( sum of current * qty) of all the stock (next to step 6)
+
+	----------------------------------------------------------------------------------
+		We will have below Pipes
+			a. Profitloss - this will tell us, wether a stock is in profit or a loss
+			b. Suggession - Buy more, sell, wait  (if a stock is in loss by 20% of investment value, we display buy more
+								if 15% more than investment, we display sell, else wait)
+
+		if purchase is 10rs and current less than 8 - we will buy more 
+		if purchase is 10rs and current more than 11.5 - we will say sell
+		else - Hold
+
+		
