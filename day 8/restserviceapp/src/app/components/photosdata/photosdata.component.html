@@ -1,0 +1,13 @@
+
+
+<button (click)="_restService.getPhotoDetails()"> Show Phots Data </button>
+
+<table border="1">
+    
+    <tr *ngFor="let p of _restService.photosDetails">
+        <td> {{ p.albumId }} </td>
+        <td> {{ p.id }} </td>
+        <td> {{ p.title }} </td>
+        <td> <img src="{{ p.thumbnailUrl }}"/> </td>
+    </tr>
+</table>

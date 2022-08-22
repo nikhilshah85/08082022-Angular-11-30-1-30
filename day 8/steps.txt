@@ -1,0 +1,97 @@
+
+
+
+
+Angular Intro
+	a. Components (.html + .css + .ts)
+
+		Data :
+			Primitive data
+			Array of Primitive data
+			JSON Object
+			JSON Object array
+
+
+
+	b. Pipes (for formatting)
+	c. Services (shared logic, variables, methods, properties -- this is 2 wy communication)
+		HttpClient (this is a standard service) - is used to make web api calls
+
+
+		--------------------------------------------------------------------------------------
+		How to make REST API calls in Angular
+
+		1. Create a new applciation - restserviceapp
+		2. clear everything from app.component.html
+		3. create a new component postdata
+			u can make a rest call directly in a component as well
+		4. create a new service
+			u can make a rest call in a service and pass the data to multiple components, and allow other component
+			to add, update, delete, calculate and all those compoennts will remain in sync
+
+		5. We need to import HttpClientModule in app.module.ts
+		6. in the service
+			 private _http:HttpClient;
+		         postDetails:any;
+
+			 constructor(private _httpRef:HttpClient){
+				this._http = _httpRef;
+  			 }
+
+
+  			 getPostData()
+  			 {
+     			  this.postDetails = this._http.get('https://jsonplaceholder.typicode.com/posts').subscribe(data =>{
+		          this.postDetails = data;
+       			  });
+		       console.log(this.postDetails);       
+			 }
+
+		7. In the postdata.component.html
+			
+
+<h1> Post Data </h1>
+<button  (click)="_restService.getPostData()"> Get Data </button>
+
+
+			<table>
+				<tr *ngFor="let p of _restService.postDetails">
+				        <td> {{ p.userId }} </td>
+				        <td> {{ p.id }} </td>
+				        <td> {{ p.title }} </td>
+				        <td> {{ p.body }} </td>
+    				</tr> 
+			</table>
+
+
+		8. in app.component.html
+			<app-postdata></app-postdata>
+
+
+
+
+
+
+
+
+
+
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
