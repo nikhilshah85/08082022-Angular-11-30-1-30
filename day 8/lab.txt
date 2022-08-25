@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+		Lab:
+		Make REST API calls in Angular
+		1. Post Data : https://jsonplaceholder.typicode.com/posts
+		
+		2. Albums : https://jsonplaceholder.typicode.com/albums
+		
+		3. users : https://jsonplaceholder.typicode.com/users
+			display 
+			name, username, email, City, CompanyName, catchphase

@@ -1,0 +1,18 @@
+Angular11 - Day10
+*****************
+
+Mini Project Day : 
+				Create a new Angular Application with Routing
+					Below are the Routes
+						Home   - welcome to my app some more details with images
+						Photos - get the data from jsonplaceholder photos
+						Comments - get the data from jsonplaceholder comments
+						Albums - get the data from jsonplaceholder Albumsm and display thumbnail url in <img
+						MathsCalculation  - click a button and show addition of 30 and 40 
+									call a funnction - add from service (CalculateService)
+						ScientificCalculation - click a button and show message- Molecules and Atoms (string)
+									call a funnction - science from service (CalculateService)
+						CustomerList - add a new services customer - add a list of json object array 
+									display the data on the page
+
+					**have a seperate service for RESt call - restcalls
